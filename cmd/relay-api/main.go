@@ -57,9 +57,9 @@ func run() error {
 		}
 		Auth struct {
 			KeyID          string `conf:"default:1"`
-			PrivateKeyFile string `conf:"default:../../key.pem"`
+			PrivateKeyFile string `conf:"default:private.pem"`
 			Algorithm      string `conf:"default:RS256"`
-			GoogleKeyFile  string `conf:"default:../../internal/platform/auth/mobile-pwa-project-e0f81b1c14b0.json"`
+			GoogleKeyFile  string `conf:"default:config/mobile-pwa-project-e0f81b1c14b0.json"`
 		}
 		Zipkin struct {
 			LocalEndpoint string  `conf:"default:0.0.0.0:3000"`

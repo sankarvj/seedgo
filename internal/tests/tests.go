@@ -122,7 +122,7 @@ func NewIntegration(t *testing.T) *Test {
 		t.Fatal(err)
 	}
 
-	googleFilePath := "../../internal/platform/auth/mobile-pwa-project-e0f81b1c14b0.json"
+	googleFilePath := "../../config/mobile-pwa-project-e0f81b1c14b0.json"
 	// Build an authenticator using this static key.
 	kid := "4754d86b-7a6d-4df5-9c65-224741361492"
 	kf := auth.NewSimpleKeyLookupFunc(kid, key.Public().(*rsa.PublicKey))
