@@ -6,10 +6,10 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/pkg/errors"
-	"gitlab.com/vjsideprojects/relay/internal/account"
-	"gitlab.com/vjsideprojects/relay/internal/platform/auth"
-	"gitlab.com/vjsideprojects/relay/internal/tests"
-	"gitlab.com/vjsideprojects/relay/internal/user"
+	"github.com/sankarvj/seedgo/internal/account"
+	"github.com/sankarvj/seedgo/internal/platform/auth"
+	"github.com/sankarvj/seedgo/internal/tests"
+	"github.com/sankarvj/seedgo/internal/user"
 )
 
 // TestUser validates the full set of CRUD operations on User values.

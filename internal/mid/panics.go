@@ -7,7 +7,7 @@ import (
 	"runtime/debug"
 
 	"github.com/pkg/errors"
-	"gitlab.com/vjsideprojects/relay/internal/platform/web"
+	"github.com/sankarvj/seedgo/internal/platform/web"
 )
 
 // Panics recovers from panics and converts the panic to an error so it is

@@ -17,9 +17,9 @@ import (
 	"github.com/ardanlabs/conf"
 	"github.com/dgrijalva/jwt-go"
 	"github.com/pkg/errors"
-	"gitlab.com/vjsideprojects/relay/cmd/relay-api/internal/handlers"
-	"gitlab.com/vjsideprojects/relay/internal/platform/auth"
-	"gitlab.com/vjsideprojects/relay/internal/platform/database"
+	"github.com/sankarvj/seedgo/cmd/api/internal/handlers"
+	"github.com/sankarvj/seedgo/internal/platform/auth"
+	"github.com/sankarvj/seedgo/internal/platform/database"
 )
 
 // build is the git version of this program. It is set using build flags in the makefile.
@@ -36,7 +36,7 @@ func run() error {
 	// =========================================================================
 	// Logging
 
-	log := log.New(os.Stdout, "RELAY : ", log.LstdFlags|log.Lmicroseconds|log.Lshortfile)
+	log := log.New(os.Stdout, "SEED : ", log.LstdFlags|log.Lmicroseconds|log.Lshortfile)
 
 	// =========================================================================
 	// Configuration
@@ -52,19 +52,19 @@ func run() error {
 			User       string `conf:"default:postgres"`
 			Password   string `conf:"default:postgres,noprint"`
 			Host       string `conf:"default:0.0.0.0"`
-			Name       string `conf:"default:relaydb"`
+			Name       string `conf:"default:seeddb"`
 			DisableTLS bool   `conf:"default:true"`
 		}
 		Auth struct {
 			KeyID          string `conf:"default:1"`
 			PrivateKeyFile string `conf:"default:private.pem"`
 			Algorithm      string `conf:"default:RS256"`
-			GoogleKeyFile  string `conf:"default:config/mobile-pwa-project-e0f81b1c14b0.json"`
+			GoogleKeyFile  string `conf:"default:config/xxx.json"`
 		}
 		Zipkin struct {
 			LocalEndpoint string  `conf:"default:0.0.0.0:3000"`
 			ReporterURI   string  `conf:"default:http://zipkin:9411/api/v2/spans"`
-			ServiceName   string  `conf:"default:relay-api"`
+			ServiceName   string  `conf:"default:seed-api"`
 			Probability   float64 `conf:"default:0.05"`
 		}
 	}

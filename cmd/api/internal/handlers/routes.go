@@ -6,9 +6,9 @@ import (
 	"os"
 
 	"github.com/jmoiron/sqlx"
-	"gitlab.com/vjsideprojects/relay/internal/mid"
-	"gitlab.com/vjsideprojects/relay/internal/platform/auth"
-	"gitlab.com/vjsideprojects/relay/internal/platform/web"
+	"github.com/sankarvj/seedgo/internal/mid"
+	"github.com/sankarvj/seedgo/internal/platform/auth"
+	"github.com/sankarvj/seedgo/internal/platform/web"
 )
 
 // API constructs an http.Handler with all application routes defined.

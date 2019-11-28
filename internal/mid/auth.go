@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"strings"
 
-	"gitlab.com/vjsideprojects/relay/internal/platform/auth"
-	"gitlab.com/vjsideprojects/relay/internal/platform/web"
+	"github.com/sankarvj/seedgo/internal/platform/auth"
+	"github.com/sankarvj/seedgo/internal/platform/web"
 	"go.opencensus.io/trace"
 )
 

@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"runtime"
 
-	"gitlab.com/vjsideprojects/relay/internal/platform/web"
+	"github.com/sankarvj/seedgo/internal/platform/web"
 	"go.opencensus.io/trace"
 )
 

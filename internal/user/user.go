@@ -9,7 +9,7 @@ import (
 	"github.com/google/uuid"
 	"github.com/jmoiron/sqlx"
 	"github.com/pkg/errors"
-	"gitlab.com/vjsideprojects/relay/internal/platform/auth"
+	"github.com/sankarvj/seedgo/internal/platform/auth"
 	"go.opencensus.io/trace"
 	"golang.org/x/crypto/bcrypt"
 )

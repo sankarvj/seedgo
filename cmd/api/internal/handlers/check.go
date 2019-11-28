@@ -5,8 +5,8 @@ import (
 	"net/http"
 
 	"github.com/jmoiron/sqlx"
-	"gitlab.com/vjsideprojects/relay/internal/platform/database"
-	"gitlab.com/vjsideprojects/relay/internal/platform/web"
+	"github.com/sankarvj/seedgo/internal/platform/database"
+	"github.com/sankarvj/seedgo/internal/platform/web"
 	"go.opencensus.io/trace"
 )
 

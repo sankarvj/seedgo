@@ -11,12 +11,12 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/jmoiron/sqlx"
-	"gitlab.com/vjsideprojects/relay/internal/platform/auth"
-	"gitlab.com/vjsideprojects/relay/internal/platform/database"
-	"gitlab.com/vjsideprojects/relay/internal/platform/database/databasetest"
-	"gitlab.com/vjsideprojects/relay/internal/platform/web"
-	"gitlab.com/vjsideprojects/relay/internal/schema"
-	"gitlab.com/vjsideprojects/relay/internal/user"
+	"github.com/sankarvj/seedgo/internal/platform/auth"
+	"github.com/sankarvj/seedgo/internal/platform/database"
+	"github.com/sankarvj/seedgo/internal/platform/database/databasetest"
+	"github.com/sankarvj/seedgo/internal/platform/web"
+	"github.com/sankarvj/seedgo/internal/schema"
+	"github.com/sankarvj/seedgo/internal/user"
 )
 
 // Success and failure markers.

@@ -13,10 +13,10 @@ import (
 
 	"github.com/ardanlabs/conf"
 	"github.com/pkg/errors"
-	"gitlab.com/vjsideprojects/relay/internal/platform/auth"
-	"gitlab.com/vjsideprojects/relay/internal/platform/database"
-	"gitlab.com/vjsideprojects/relay/internal/schema"
-	"gitlab.com/vjsideprojects/relay/internal/user"
+	"github.com/sankarvj/seedgo/internal/platform/auth"
+	"github.com/sankarvj/seedgo/internal/platform/database"
+	"github.com/sankarvj/seedgo/internal/schema"
+	"github.com/sankarvj/seedgo/internal/user"
 )
 
 func main() {

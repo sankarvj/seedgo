@@ -1,29 +1,29 @@
 SHELL := /bin/bash
 
-export PROJECT = relay-project
+export PROJECT = seed-project
 
-all: relay-api metrics
+all: seed-api metrics
 
 run: 
-	go run ./cmd/relay-api/main.go
+	go run ./cmd/api/main.go
 
 keys:
-	go run ./cmd/relay-admin/main.go keygen private.pem
+	go run ./cmd/admin/main.go keygen private.pem
 
 admin:
-	go run ./cmd/relay-admin/main.go --db-disable-tls=1 useradd admin@example.com gophers
+	go run ./cmd/admin/main.go --db-disable-tls=1 useradd admin@example.com gophers
 
 migrate:
-	go run ./cmd/relay-admin/main.go --db-disable-tls=1 migrate
+	go run ./cmd/admin/main.go --db-disable-tls=1 migrate
 
 seed: migrate
-	go run ./cmd/relay-admin/main.go --db-disable-tls=1 seed
+	go run ./cmd/admin/main.go --db-disable-tls=1 seed
 
-relay-api:
+seed-api:
 	docker build \
-		-f dockerfile.relay-api \
-		-t gcr.io/$(PROJECT)/relay-api-amd64:1.0 \
-		--build-arg PACKAGE_NAME=relay-api \
+		-f dockerfile.api \
+		-t gcr.io/$(PROJECT)/api-amd64:1.0 \
+		--build-arg PACKAGE_NAME=api \
 		--build-arg VCS_REF=`git rev-parse HEAD` \
 		--build-arg BUILD_DATE=`date -u +”%Y-%m-%dT%H:%M:%SZ”` \
 		.

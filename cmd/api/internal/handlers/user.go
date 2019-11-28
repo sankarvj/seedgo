@@ -7,9 +7,9 @@ import (
 	firebase "firebase.google.com/go"
 	"github.com/jmoiron/sqlx"
 	"github.com/pkg/errors"
-	"gitlab.com/vjsideprojects/relay/internal/platform/auth"
-	"gitlab.com/vjsideprojects/relay/internal/platform/web"
-	"gitlab.com/vjsideprojects/relay/internal/user"
+	"github.com/sankarvj/seedgo/internal/platform/auth"
+	"github.com/sankarvj/seedgo/internal/platform/web"
+	"github.com/sankarvj/seedgo/internal/user"
 	"go.opencensus.io/trace"
 	"google.golang.org/api/option"
 )

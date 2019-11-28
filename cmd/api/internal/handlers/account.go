@@ -5,9 +5,9 @@ import (
 	"net/http"
 
 	"github.com/jmoiron/sqlx"
-	"gitlab.com/vjsideprojects/relay/internal/account"
-	"gitlab.com/vjsideprojects/relay/internal/platform/auth"
-	"gitlab.com/vjsideprojects/relay/internal/platform/web"
+	"github.com/sankarvj/seedgo/internal/account"
+	"github.com/sankarvj/seedgo/internal/platform/auth"
+	"github.com/sankarvj/seedgo/internal/platform/web"
 	"go.opencensus.io/trace"
 )
 
